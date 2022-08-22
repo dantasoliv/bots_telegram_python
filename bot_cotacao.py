@@ -2,9 +2,7 @@ import telebot # Importando a biblioteca do telegram // Comando para ininstalr a
 import requests # Importando a biblioteca requests
 import json # Importando a biblioteca json
 
-local = '/home/daniel/Documentos/Daniel/Arquivos/bots_telegram_python/tocken_bot_telegram.txt'
-
-with open(local, 'r') as file: # Modo de Leitura 'r'
+with open('/home/daniel/Documentos/Daniel/Arquivos/bots_telegram_python/tocken_bot_telegram.txt', 'r') as file: # Modo de Leitura 'r'
     TOKEN = str(file.read().rstrip()) # Constante para armazerna o tocken do bot do telegram que está em um rquivo txt
 
 bot = telebot.TeleBot(TOKEN) # Instanciando a classe da biblioteca telebot que vai se conecar com a API de telegram através do token
